@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="pl-PL" class="scroll-smooth">
+    <head>
+    <title>Forum Zs3 Rypin</title>
+    <link rel="website icon" href="szkola.jfif">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="output.css">
+        <style>
+          ::-webkit-scrollbar {
+              width: 10px;
+          }
+  
+          ::-webkit-scrollbar-track {
+              background: #363636;
+          }
+  
+          ::-webkit-scrollbar-thumb {
+              background: rgb(31, 31, 31);
+          }
+  
+          ::-webkit-scrollbar-thumb:hover {
+              background: #575757;
+          }
+          #posts {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#post-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#message {
+    width: 100%;
+    height: 100px;
+}
+      </style>
+      <script>
+            function odliczanie(){
+                var dzis = new Date();
+                var dzien = dzis.getDate();
+                var godz = dzis.getHours();
+                var sekunda = dzis.getSeconds();
+                var minuta = dzis.getMinutes();
+                var miesiac = dzis.getMonth()+1;
+                var rok = dzis.getFullYear();
+                document.getElementById("zegar").innerHTML = dzien+"   "+"/"+"   "+miesiac+"   "+"/"+rok+"|"+godz+"/"+"   "+minuta+"   "+"/"+"   "+sekunda;
+                setTimeout("odliczanie()",1000);
+            }
+      </script>
+    </head>
+<body class="bg-slate-950 animated fadeIn delay-25s" onload="odliczanie();"> 
+<!--     <header id="home" class="bg-purple-950 text-white text-2xl">
+        <nav class="relative flex flex-wrap items-center justify-between px-2 py-5 bg-slate-900 mb-">
+            <div class="container px-4 mx-auto flex flex-wrap items-center justify-center">
+              <div class="w-full relative flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
+                <a class="text-sm max-md:mt-5 max-lg:mt-5 font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white" href="dashboard.html">
+                  <div id="zegar"></div>
+                </a>
+                <button class="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" onclick="toggleNavbar('example-collapse-navbar')">
+                    <svg class="rounded-full hover:bg-transparent cursor-pointer transition delay-150 duration-300 ease-in-out" width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H20M4 18H20" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                </button>
+              </div>
+              <div class="lg:flex items-center hidden" id="example-collapse-navbar">
+                <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+                  <li class="nav-item">
+                    <a class="px-3 py-2 flex items-center text-xl  font-bold leading-snug text-white hover:text-blue-500 transition-all delay-150" href="index.html">
+                      <i class="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i><span class="ml-2">Home</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="px-3 py-2 flex items-center text-xl  font-bold leading-snug text-white hover:text-blue-500 transition-all delay-150" href=".html">
+                      <i class="fab fa-twitter text-lg leading-lg text-white opacity-75"></i><span class="ml-2">Forum</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="px-3 py-2 flex items-center text-xl  font-bold leading-snug text-white hover:text-blue-500 transition-all delay-150" href="">
+                      <i class="fab fa-pinterest text-lg leading-lg text-white opacity-75"></i><span class="ml-2">Kontakt</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header> -->
+    <main class="max-sm:px-0 max-md:px-0 max-lg:px-0 max-xl:px-0 py-20 px-10">
+      <div class="flex flex-col justify-start items-start max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center px-72 max-sm:px-0 max-md:px-0 max-lg:px-0 max-xl:px-0 flex-wrap gap-5 bg-slate-900 py-10">
+        <img src="tlo.jpg">
+        <h1 class="font-bold text-4xl text-center text-white">Uzytkownik:</h1>
+        <div class="">
+            <h1 class="text-2xl text-white font-bold">Problem</h1>
+            <p class="text-xl text-white font-medium">Dotyczy:</p>
+        </div>
+        <h1 class="text-xl font-bold text-white">Opis:</h1>
+        <p class="text-white text-lg font-medium">Krotki opis problemu komputer nieodpala nic oprocz matrycy wentylatory kreca sie i wszystko g ale nie dziala dokladnie chodzi o to ze komputer niby odpala ale nie odpala biosu ani systemu</p>
+        <div class="">
+            <a href="forum2.html" class="font-bold text-lg text-center bg-blue-500 px-9 py-4 transition-all delay-150 hover:bg-transparent text-white">Powrot do forum</a>
+        </div>
+    </div>
+    </main>
+    <div class="h-1 bg-slate-300 py-0"></div>
+    <h1 class="py-10 font-bold text-2xl text-white text-center">Dodaj swoj komentarz:::</h1>
+    <div class="flex gap-2 flex-wrap justify-center items-center">
+        <p class="text-white font-medium text-center">Pamietaj aby szanowac i uzywac kulturki w swojej wypowiedzi!!!</p><a href="" class="text-white font-medium text-center hover:text-blue-500 delay-150 transition-all">Zapoznaj sie z regulaminem komentarzy</a>
+    </div>
+    <section class="py-32 px-80 max-sm:px-0 max-md:px-0 max-lg:px-0 max-xl:px-0">
+        <div class="flex flex-col justify-start max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center items-start flex-wrap">
+            <form action="...">
+                <textarea class="px-80 max-sm:px-0 max-md:px-0 max-lg:px-0 max-xl:px-0 py-1 rounded-xl bg-slate-800 text-white" name="nazwa" cols="x" rows="y">Dolacz do dyskusji</textarea>
+            </form>
+            <div class="py-20 bg-slate-800 px-10 mt-10 rounded-xl">
+              <div class="flex gap-1 flex-wrap">
+                  <img src="logo.png" class="max-w-10 rounded-full"><h1 class="text-xl font-bold text-white">Uzytkownik:</h1>
+              </div>
+              <div class="flex flex-wrap justify-center items-center max-sm:max-w-72">
+                <p class="text-lg font-medium text-white max-w-sm">KomentarzKomenKta inline-size: min-content;inline-size: min-content; inline-size: min-content;entaz</p>
+              </div>
+              <div class="flex gap-1 flex-wrap">
+                  <a href="" class="font-medium text-white text-xl hover:text-slate-300 delay-150 transition-all">Udostepnij</a><p class="text-xl text-white font-medium cursor-pointer hover:text-slate-300 delay-150 transition-all">Odpowiedz</p>
+              </div>
+          </div>
+          <div class="py-20 bg-slate-800 px-10 mt-10 rounded-xl">
+            <div class="flex gap-1 flex-wrap">
+                <img src="logo.png" class="max-w-10 rounded-full"><h1 class="text-xl font-bold text-white">Uzytkownik:</h1>
+            </div>
+            <div class="flex flex-wrap justify-center items-center max-sm:max-w-72">
+              <p class="text-lg font-medium text-white max-w-sm">KomentarzKomenKta inline-size: min-content;inline-size: min-content; inline-size: min-content;entaz</p>
+            </div>
+            <div class="flex gap-1 flex-wrap">
+                <a href="" class="font-medium text-white text-xl hover:text-slate-300 delay-150 transition-all">Udostepnij</a><p class="text-xl text-white font-medium cursor-pointer hover:text-slate-300 delay-150 transition-all">Odpowiedz</p>
+            </div>
+          </div>
+          <div class="py-20 bg-slate-800 px-10 mt-10 rounded-xl">
+            <div class="flex gap-1 flex-wrap">
+                <img src="logo.png" class="max-w-10 rounded-full"><h1 class="text-xl font-bold text-white">Uzytkownik:</h1>
+            </div>
+            <div class="flex flex-wrap justify-center items-center max-sm:max-w-72">
+              <p class="text-lg font-medium text-white max-w-sm">KomentarzKomenKta inline-size: min-content;inline-size: min-content; inline-size: min-content;entaz</p>
+            </div>
+            <div class="flex gap-1 flex-wrap">
+                <a href="" class="font-medium text-white text-xl hover:text-slate-300 delay-150 transition-all">Udostepnij</a><p class="text-xl text-white font-medium cursor-pointer hover:text-slate-300 delay-150 transition-all">Odpowiedz</p>
+            </div>
+          </div>
+          <div class="py-20 bg-slate-800 px-10 mt-10 rounded-xl">
+            <div class="flex gap-1 flex-wrap">
+                <img src="logo.png" class="max-w-10 rounded-full"><h1 class="text-xl font-bold text-white">Uzytkownik:</h1>
+            </div>
+            <div class="flex flex-wrap justify-center items-center max-sm:max-w-72">
+              <p class="text-lg font-medium text-white max-w-sm">KomentarzKomenKta inline-size: min-content;inline-size: min-content; inline-size: min-content;entaz</p>
+            </div>
+            <div class="flex gap-1 flex-wrap">
+                <a href="" class="font-medium text-white text-xl hover:text-slate-300 delay-150 transition-all">Udostepnij</a><p class="text-xl text-white font-medium cursor-pointer hover:text-slate-300 delay-150 transition-all">Odpowiedz</p>
+            </div>
+          </div>
+          <div class="py-20 bg-slate-800 px-10 mt-10 rounded-xl">
+              <div class="flex gap-1 flex-wrap">
+                  <img src="logo.png" class="max-w-10 rounded-full"><h1 class="text-xl font-bold text-white">Uzytkownik:</h1>
+              </div>
+              <div class="flex flex-wrap justify-center items-center max-sm:max-w-72">
+                <p class="text-lg font-medium text-white max-w-sm">KomentarzKomenKta inline-size: min-content;inline-size: min-content; inline-size: min-content;entaz</p>
+              </div>
+              <div class="flex gap-1 flex-wrap">
+                  <a href="" class="font-medium text-white text-xl hover:text-slate-300 delay-150 transition-all">Udostepnij</a><p class="text-xl text-white font-medium cursor-pointer hover:text-slate-300 delay-150 transition-all">Odpowiedz</p>
+              </div>
+          </div>
+        </div>
+    </section>
+    <footer class="flex justify-center items-center gap-10">
+        <h1 class="font-bold text-center text-white text-lg">CopyRight@2024Forum</h1>
+        <a href="#home">
+            <svg xmlns="http://www.w3.org/2000/svg" height="26" width="26" viewBox="0 0 448 512"><path fill="#ffffff" d="M246.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 109.3V320c0 17.7 14.3 32 32 32s32-14.3 32-32V109.3l73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 53 43 96 96 96H352c53 0 96-43 96-96V352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V352z"/></svg>
+        </a>
+    </footer>
+    <script type="text/javascript">
+        function toggleNavbar(collapseID){
+    document.getElementById(collapseID).classList.toggle("hidden");
+    document.getElementById(collapseID).classList.toggle("flex");
+    }
+    function revealElement(element, duration, delay, distance, origin) {
+              var initialOpacity = window.getComputedStyle(element).getPropertyValue('opacity');
+              element.style.opacity = '0';
+              setTimeout(function() {
+                element.style.transition = 'opacity ' + duration + 'ms';
+                element.style.opacity = initialOpacity;
+              }, delay);
+            }
+            var animatedElements = document.getElementsByClassName('animated');
+            for (var i = 0; i < animatedElements.length; i++) {
+              revealElement(animatedElements[i], 1000, 500, '50px', 'bottom');
+            }
+
+         
+
+    </script>
+
+</body>
+</html>
